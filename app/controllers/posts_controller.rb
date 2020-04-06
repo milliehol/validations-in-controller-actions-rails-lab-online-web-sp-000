@@ -10,7 +10,6 @@ class PostsController < ApplicationController
   def update
     
     if @post.update(post_params)
-      @post.save
       redirect_to post_path(@article)
     else
       render :edit
