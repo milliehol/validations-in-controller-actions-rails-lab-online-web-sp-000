@@ -6,7 +6,7 @@ class AuthorsController < ApplicationController
   def new
   end
 
-    def create
+  def create
     # Create a brand new, unsaved, not-yet-validated Post object from the form.
     @author = Author.new(post_params)
  
