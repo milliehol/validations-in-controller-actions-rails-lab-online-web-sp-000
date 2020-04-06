@@ -8,7 +8,7 @@ class AuthorsController < ApplicationController
 
   def create
     # Create a brand new, unsaved, not-yet-validated Post object from the form.
-    @author = Author.new(post_params)
+    @author = Author.new(author_params)
  
     # Run the validations WITHOUT attempting to save to the database, returning
     # true if the Post is valid, and false if it's not.
